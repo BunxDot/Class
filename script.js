@@ -1,25 +1,29 @@
-var number = 3;
-var string = "I believe it to be fine.";
 
-// Operators
-var s = 2;
-var n = 2;
+// Switch //
 
-var sum = s + n;
-s == n;
+var personName = prompt ("What is your name?");
 
-// If Statement
-var o = 6;
-var w = 2;
-var theNumbersMatch
+switch(personName) {
+  case "Galo Thymos":
+  alert("Burning Soul!");
+  break;
 
-if ( 0 == w ) {
-    theNumbersMatch = true;
-} else {
-    theNumbersMatch = false;
+  case "Lio Fotia":
+  alert ("Boss!");
+  break;
+
+  default:
+  alert ("Sorry, chief!!!");
+
 }
 
-console.log(theNumbersMatch);
+// Function //
 
-// Alert
-alert("Time to go to the tea party!");
+function addNumbers(s, n) {
+var addedTotal= s +n;
+return addedTotal;
+
+}
+
+var add2 = addNumbers(1,10);
+alert (add2);
